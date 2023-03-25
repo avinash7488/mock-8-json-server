@@ -4,8 +4,9 @@ A template to deploy [JSON Server](https://github.com/typicode/json-server) to [
 
 Demo from this repository: 
 
-1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
+1. https://mock-8-json-server-tau.vercel.app/
+2. https://mock-8-json-server-tau.vercel.app/users
+3. https://mock-8-json-server-tau.vercel.app/movies
 
 ### How to use
 
@@ -20,13 +21,29 @@ Demo from this repository:
 
 ```json
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "users": [],
+  "movies": [
+    {
+		"id" : 1,
+		"poster" : "https://image.tmdb.org/t/p/original/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+		"title" : "Doctor Strange in the Multiverse of Madness",
+		"director" : "Sam Raimi",
+		"year" : 2022,
+		"genre" : "Action",
+		"IMDB_Rating" : 6.8,
+		"ticket" : 200
+	},
+	{
+		"id" : 2,
+		"poster" : "https://images2.9c9media.com/image_asset/2019_2_14_f02ce589-7434-4ef2-ae0f-1879c20072e2_png_2000x3000.jpg",
+		"title" : "I Am Legend",
+		"director" : "Francis Lawrence",
+		"year" : 2007,
+		"genre" : "Horror",
+		"IMDB_Rating" : 7.2,
+		"ticket" : 200
+	}
+  ]
 }
 ```
 
